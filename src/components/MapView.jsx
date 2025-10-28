@@ -14,6 +14,8 @@ L.Icon.Default.mergeOptions({
 const center = [20, 0];
 
 export default function MapView({ earthquakes }) {
+  console.log('MapView rendering with earthquakes:', earthquakes.length);
+  
   return (
     <MapContainer 
       center={center} 
@@ -29,6 +31,7 @@ export default function MapView({ earthquakes }) {
       {earthquakes.map(eq => {
         const [lng, lat, depth] = eq.geometry.coordinates;
         const { mag, place, time } = eq.properties;
+        console.log('Rendering marker for earthquake:', eq.id);
         return (
           <Marker 
             key={eq.id} 
