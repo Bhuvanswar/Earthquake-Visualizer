@@ -1,4 +1,4 @@
-# Earthquake Visualizer
+# Earthquake Visualizer[https://rgq77m-5173.csb.app/Earthquake-Visualizer/]
 
 A real-time earthquake visualization application built with React, Vite, and Leaflet maps. This application displays recent seismic activity from the USGS API on an interactive world map.
 
